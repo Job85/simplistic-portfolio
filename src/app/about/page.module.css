@@ -1,0 +1,25 @@
+.container {
+    border-style: double;
+    border-radius: 12px;
+    border-width: medium;
+    border-color: #C0C0C0;
+    box-shadow: 0px 0px 5px 5px #9900FF;
+    margin: 2em;
+    color: #C0C0C0;
+    width: 75vw;
+}
+
+.h1 {
+    font-weight: 100;
+    padding-left: 2rem;
+}
+
+.para1 {
+    margin: 1em 1em 0 1em;
+    padding: 2em 2em 0.5em 2em;
+}
+
+.para2 {
+    margin: 0 1em 1em 1em;
+    padding: 0 2em 2em 2em;
+}
