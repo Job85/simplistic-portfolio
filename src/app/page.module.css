@@ -1,11 +1,59 @@
+.container {
+    width: 80vw;
+    margin: 0 1em;
+    color: #C0C0C0;
+    position: relative;
+    z-index: 0;
+    border-radius: 12px;
+    overflow: hidden;
+    padding: 2em;
+}
+
+.container::before {
+    content: "";
+    position: absolute;
+    z-index: -2;
+    left: -50%;
+    width: 200%;
+    height: 40%;
+    background-color: #000;
+    background-repeat: no-repeat;
+    background-size: 100% 100%, 50% 50%;
+    background-position: 0 0, 100% 0, 100% 100%, 0 100%;
+    background-image: linear-gradient(#00CED1, #00CCFF);
+    animation: boxRotate 8s linear infinite;
+}
+
+.container::after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 1px;
+    top: 1px;
+    width: calc(100% - 2px);
+    height: calc(100% - 2px);
+    background: linear-gradient(#06021d, #06021d);
+    border-radius: 12px;
+}
+
+@keyframes boxRotate {
+    100% {
+        transform: rotate(1turn);
+    }
+}
+
+/* above code credited to:
+https://www.julienthibeaut.xyz/blog/create-animated-gradient-borders-with-css 
+*/
+
 .h1 {
-    color: aliceblue;
     font-weight: 100;
+    margin: 1rem;
 }
 
 .h2 {
-    color: aliceblue;
     font-weight: 100;
+    margin: 2rem;
 }
 
 .bold {
