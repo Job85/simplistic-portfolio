@@ -2,8 +2,8 @@ import styles from './page.module.css'
 
 export default function About() {
     return (
-        <>
-            <div className={styles.container}>
+        <div className={styles.container}>
+            <div className={styles.about}>
                 <h1 className={styles.h1}>
                     About Me
                 </h1>
@@ -16,16 +16,16 @@ export default function About() {
                     Through this intensive experience, I gained a profound understanding of JavaScript and honed my expertise in both the PERN &#40;PostgreSQL, Express, React, Node.js&#41; and MERN &#40;MongoDB, Express, React, Node.js&#41; stacks.
                 </p>
             </div>
-            <div className={styles.container}>
+            <div className={styles.skills}>
                 <h2 className={styles.h2}>
                     Skills
                 </h2>
-                <div className={styles.skills}>
+                <div className={styles.stacks}>
                     <h3 className={styles.h3}>
                         STACK's
                     </h3>
                 </div>
             </div>
-        </>
+        </div>
     )
 }
