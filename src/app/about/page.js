@@ -1,5 +1,5 @@
 import styles from './page.module.css'
-
+import MERN from '../components/Skills/Skills'
 export default function About() {
     return (
         <div className={styles.container}>
@@ -24,6 +24,9 @@ export default function About() {
                     <h3 className={styles.h3}>
                         STACK's
                     </h3>
+                    <div className={styles.stack}>
+                        <MERN />
+                    </div>
                 </div>
             </div>
         </div>
