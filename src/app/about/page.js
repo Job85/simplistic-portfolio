@@ -1,5 +1,5 @@
 import styles from './page.module.css'
-import { MERN, PERN } from '../components/Skills/Skills'
+import { MERN, PERN, Languages } from '../components/Skills/Skills'
 export default function About() {
     return (
         <div className={styles.container}>
@@ -30,6 +30,12 @@ export default function About() {
                     <div className={styles.stack}>
                         <PERN />
                     </div>
+                </div>
+                <div>
+                    <h3 className={styles.h3}>
+                        Languages
+                    </h3>
+                    <Languages />
                 </div>
             </div>
         </div>
