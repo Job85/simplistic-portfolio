@@ -1,0 +1,14 @@
+.mern {
+    background-image: linear-gradient(#FF0066, #9900FF);
+    width: fit-content;
+    margin: 0 1em 3em 1em;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.imgContainer {
+    position: relative;
+    height: 4em;
+    width: 4em;
+}
