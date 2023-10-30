@@ -16,10 +16,15 @@ export default function About() {
                     Through this intensive experience, I gained a profound understanding of JavaScript and honed my expertise in both the PERN &#40;PostgreSQL, Express, React, Node.js&#41; and MERN &#40;MongoDB, Express, React, Node.js&#41; stacks.
                 </p>
             </div>
-            <div>
+            <div className={styles.container}>
                 <h2 className={styles.h2}>
                     Skills
                 </h2>
+                <div className={styles.stacks}>
+                    <h3 className={styles.h3}>
+                        STACK's
+                    </h3>
+                </div>
             </div>
         </>
     )
