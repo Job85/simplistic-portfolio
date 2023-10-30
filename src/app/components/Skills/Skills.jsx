@@ -70,3 +70,24 @@ export function PERN() {
         </div>
     )
 }
+
+export function Languages() {
+    return (
+        <div className={styles.pern}>
+            <div className={styles.imgContainer}>
+                <Image
+                    src={'/javascriptIcon.png'}
+                    fill
+                    alt="JavaScript Icon"
+                />
+            </div>
+            <div className={styles.imgContainer}>
+                <Image
+                    src={'/pythonIcon.png'}
+                    fill
+                    alt="Python Icon"
+                />
+            </div>
+        </div>
+    )
+}
