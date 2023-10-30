@@ -17,7 +17,11 @@
 .h2 {
     font-weight: 100;
     padding: 0 3rem 2rem 4rem;
-    color: #C0C0C0;
+}
+
+.h3 {
+    font-weight: 100;
+    padding-left: 6rem;
 }
 
 .para1 {
