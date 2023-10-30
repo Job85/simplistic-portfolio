@@ -12,6 +12,11 @@
     width: 75vw;
 }
 
+.stacks {
+    display: flex;
+    flex-direction: row;
+}
+
 .h1 {
     font-weight: 100;
     padding-left: 2rem;
