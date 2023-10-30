@@ -1,5 +1,5 @@
 .mern {
-    background-image: linear-gradient(#9900FF, #FF0066);
+    background-color: white;
     width: fit-content;
     margin: 0 1em 3em 1em;
     display: grid;
@@ -7,7 +7,7 @@
 }
 
 .pern {
-    background-image: linear-gradient(#FF0066, #00CCFF);
+    background-color: white;
     width: fit-content;
     margin: 0 1em 3em 1em;
     display: grid;
@@ -16,6 +16,6 @@
 
 .imgContainer {
     position: relative;
-    height: 4em;
-    width: 4em;
+    height: 6em;
+    width: 6em;
 }
