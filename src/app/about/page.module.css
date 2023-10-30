@@ -12,7 +12,7 @@
     width: 75vw;
 }
 
-.stacks {
+.sub_skills {
     display: flex;
     flex-direction: row;
 }

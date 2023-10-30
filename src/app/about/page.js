@@ -20,7 +20,7 @@ export default function About() {
                 <h2 className={styles.h2}>
                     Skills
                 </h2>
-                <div className={styles.stacks}>
+                <div className={styles.sub_skills}>
                     <h3 className={styles.h3}>
                         STACK's
                     </h3>
@@ -31,7 +31,7 @@ export default function About() {
                         <PERN />
                     </div>
                 </div>
-                <div>
+                <div className={styles.sub_skills}>
                     <h3 className={styles.h3}>
                         Languages
                     </h3>
