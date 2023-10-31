@@ -10,34 +10,34 @@ const NavBar = () => {
     const pathname = usePathname();
 
     return (
-        <nav className={styles.navBar}>
-            <ul className={styles.navLinks}>
+        <nav className={styles.nav_container}>
+            <ul className={styles.nav_links}>
                 <Link
-                    className={`${styles.navLink} ${pathname === '/' ? styles.activeLink : ''}`}
+                    className={`${styles.nav_link} ${pathname === '/' ? styles.active_link : ''}`}
                     href="/"
                 >
                     Home
                 </Link>
                 <Link
-                    className={`${styles.navLink} ${pathname === '/about' ? styles.activeLink : ''}`}
+                    className={`${styles.nav_link} ${pathname === '/about' ? styles.active_link : ''}`}
                     href="/about"
                 >
                     About
                 </Link>
                 <Link
-                    className={styles.navLink}
+                    className={styles.nav_link}
                     href="/projects"
                 >
                     Projects
                 </Link>
                 <Link
-                    className={styles.navLink}
+                    className={styles.nav_link}
                     href=""
                 >
                     GitHub
                 </Link>
                 <Link
-                    className={styles.navLink}
+                    className={styles.nav_link}
                     href=""
                 >
                     LinkedIn
