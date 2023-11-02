@@ -1,5 +1,5 @@
 import styles from './page.module.css'
-import { MERN, PERN, Languages } from '../components/Skills/Skills'
+import { MERN, PERN, Languages, Libraries } from '../components/Skills/Skills'
 export default function About() {
     return (
         <div className={styles.container}>
@@ -36,6 +36,12 @@ export default function About() {
                         Languages
                     </h3>
                     <Languages />
+                </div>
+                <div className={styles.sub_skills}>
+                    <h3 className={styles.h3}>
+                        Libraries
+                    </h3>
+                    <Libraries />
                 </div>
             </div>
         </div>
