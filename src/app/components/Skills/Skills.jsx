@@ -3,29 +3,29 @@ import Image from "next/image";
 
 export function MERN() {
     return (
-        <div className={styles.mern}>
-            <div className={styles.imgContainer}>
+        <div className={styles.skills_container}>
+            <div className={styles.img_container}>
                 <Image
                     src={'/mongoDBIcon.png'}
                     fill
                     alt="Mongo DB Icon"
                 />
             </div>
-            <div className={styles.imgContainer}>
+            <div className={styles.img_container}>
                 <Image
                     src={'/expressJSIcon.png'}
                     fill
                     alt="Express JS Icon"
                 />
             </div>
-            <div className={styles.imgContainer}>
+            <div className={styles.img_container}>
                 <Image
                     src={'/reactIcon.png'}
                     fill
                     alt="React Icon"
                 />
             </div>
-            <div className={styles.imgContainer}>
+            <div className={styles.img_container}>
                 <Image
                     src={'/nodeJSIcon.png'}
                     fill
@@ -38,29 +38,29 @@ export function MERN() {
 
 export function PERN() {
     return (
-        <div className={styles.pern}>
-            <div className={styles.imgContainer}>
+        <div className={styles.skills_container}>
+            <div className={styles.img_container}>
                 <Image
                     src={'/postgreSQLIcon.png'}
                     fill
                     alt="Postgres SQL Icon"
                 />
             </div>
-            <div className={styles.imgContainer}>
+            <div className={styles.img_container}>
                 <Image
                     src={'/expressJSIcon.png'}
                     fill
                     alt="Express JS Icon"
                 />
             </div>
-            <div className={styles.imgContainer}>
+            <div className={styles.img_container}>
                 <Image
                     src={'/reactIcon.png'}
                     fill
                     alt="React Icon"
                 />
             </div>
-            <div className={styles.imgContainer}>
+            <div className={styles.img_container}>
                 <Image
                     src={'/nodeJSIcon.png'}
                     fill
@@ -73,15 +73,15 @@ export function PERN() {
 
 export function Languages() {
     return (
-        <div className={styles.pern}>
-            <div className={styles.imgContainer}>
+        <div className={styles.skills_container}>
+            <div className={styles.img_container}>
                 <Image
                     src={'/javascriptIcon.png'}
                     fill
                     alt="JavaScript Icon"
                 />
             </div>
-            <div className={styles.imgContainer}>
+            <div className={styles.img_container}>
                 <Image
                     src={'/pythonIcon.png'}
                     fill

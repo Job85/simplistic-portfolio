@@ -1,4 +1,4 @@
-.mern {
+.skills_container {
     background-color: white;
     width: fit-content;
     margin: 0 1em 3em 1em;
@@ -6,15 +6,7 @@
     grid-template-columns: repeat(4, 1fr);
 }
 
-.pern {
-    background-color: white;
-    width: fit-content;
-    margin: 0 1em 3em 1em;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-}
-
-.imgContainer {
+.img_container {
     position: relative;
     height: 6em;
     width: 6em;
