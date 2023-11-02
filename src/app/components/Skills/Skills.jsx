@@ -91,3 +91,24 @@ export function Languages() {
         </div>
     )
 }
+
+export function Libraries() {
+    return (
+        <div className={styles.skills_container}>
+            <div className={styles.img_container}>
+                <Image
+                    src={'/bootstrapIcon.png'}
+                    fill
+                    alt="Bootstrap Icon"
+                />
+            </div>
+            <div className={styles.img_container}>
+                <Image
+                    src={'/mongooseIcon.png'}
+                    fill
+                    alt="Mongoose Icon"
+                />
+            </div>
+        </div>
+    )
+}
