@@ -97,18 +97,44 @@ export function Libraries() {
         <div className={styles.skills_container}>
             <div className={styles.img_container}>
                 <Image
-                    src={'/bootstrapIcon.png'}
-                    fill
-                    alt="Bootstrap Icon"
-                />
-            </div>
-            <div className={styles.img_container}>
-                <Image
                     src={'/mongooseIcon.png'}
                     fill
                     alt="Mongoose Icon"
                 />
             </div>
+            <div className={styles.img_container}>
+                <Image
+                    src={'/sequelizeIcon.png'}
+                    fill
+                    alt="Sequelize Icon"
+                />
+            </div>
         </div>
     )
+}
+
+export function Frameworks() {
+    <div className={styles.skills_container}>
+        <div className={styles.img_container}>
+            <Image
+                src={'/bootstrapIcon.png'}
+                fill
+                alt="Bootstrap Icon"
+            />
+        </div>
+        <div className={styles.img_container}>
+            <Image
+                src={'/sassIcon.png'}
+                fill
+                alt="Sass Icon"
+            />
+        </div>
+        <div className={styles.img_container}>
+            <Image
+                src={'/djangoIcon.png'}
+                fill
+                alt="Django Icon"
+            />
+        </div>
+    </div>
 }
