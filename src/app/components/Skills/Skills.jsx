@@ -114,27 +114,29 @@ export function Libraries() {
 }
 
 export function Frameworks() {
-    <div className={styles.skills_container}>
-        <div className={styles.img_container}>
-            <Image
-                src={'/bootstrapIcon.png'}
-                fill
-                alt="Bootstrap Icon"
-            />
+    return (
+        <div className={styles.skills_container}>
+            <div className={styles.img_container}>
+                <Image
+                    src={'/bootstrapIcon.png'}
+                    fill
+                    alt="Bootstrap Icon"
+                />
+            </div>
+            <div className={styles.img_container}>
+                <Image
+                    src={'/sassIcon.png'}
+                    fill
+                    alt="Sass Icon"
+                />
+            </div>
+            <div className={styles.img_container}>
+                <Image
+                    src={'/djangoIcon.png'}
+                    fill
+                    alt="Django Icon"
+                />
+            </div>
         </div>
-        <div className={styles.img_container}>
-            <Image
-                src={'/sassIcon.png'}
-                fill
-                alt="Sass Icon"
-            />
-        </div>
-        <div className={styles.img_container}>
-            <Image
-                src={'/djangoIcon.png'}
-                fill
-                alt="Django Icon"
-            />
-        </div>
-    </div>
+    )
 }
