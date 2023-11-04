@@ -70,11 +70,38 @@ const ProjectCards = () => {
                     </div>
                     <div>
                         <h3>{card.subTitle}</h3>
-                        <p>{card.listGroup}</p>
+                        <ul className={styles.list}>
+                            {card.listGroup.map((item, index) =>
+                                <li
+                                    className={styles.list_item}
+                                    key={index}
+                                >
+                                    {item}
+                                </li>
+                            )}
+                        </ul>
                         <h3>{card.subTitle2}</h3>
-                        <p>{card.listGroup2}</p>
+                        <ul className={styles.list}>
+                            {card.listGroup2.map((item, index) =>
+                                <li
+                                    className={styles.list_item}
+                                    key={index}
+                                >
+                                    {item}
+                                </li>
+                            )}
+                        </ul>
                         <h3>{card.subTitle3}</h3>
-                        <p>{card.listGroup3}</p>
+                        <ul className={styles.list}>
+                            {card.listGroup3.map((item, index) =>
+                                <li
+                                    className={styles.list_item}
+                                    key={index}
+                                >
+                                    {item}
+                                </li>
+                            )}
+                        </ul>
                     </div>
                 </div>
             ))}
