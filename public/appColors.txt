@@ -1,3 +1,3 @@
-hot pink #FF0066
+hot pink #FF0066 || #ff6ec7
 turquoise #00CED1
 electric purple #9900FF
