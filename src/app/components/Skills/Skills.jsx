@@ -8,6 +8,8 @@ export function MERN() {
                 <Image
                     src={'/mongoDBIcon.png'}
                     fill
+                    sizes="(max-width: 640px) 100vw, 400px"
+                    priority={true}
                     alt="Mongo DB Icon"
                 />
             </div>
@@ -15,6 +17,7 @@ export function MERN() {
                 <Image
                     src={'/expressJSIcon.png'}
                     fill
+                    sizes="(max-width: 640px) 100vw, 400px"
                     alt="Express JS Icon"
                 />
             </div>
@@ -22,6 +25,7 @@ export function MERN() {
                 <Image
                     src={'/reactIcon.png'}
                     fill
+                    sizes="(max-width: 640px) 100vw, 400px"
                     alt="React Icon"
                 />
             </div>
@@ -29,6 +33,7 @@ export function MERN() {
                 <Image
                     src={'/nodeJSIcon.png'}
                     fill
+                    sizes="(max-width: 640px) 100vw, 400px"
                     alt="Node JS Icon"
                 />
             </div>
@@ -43,6 +48,7 @@ export function PERN() {
                 <Image
                     src={'/postgreSQLIcon.png'}
                     fill
+                    sizes="(max-width: 640px) 100vw, 400px"
                     alt="Postgres SQL Icon"
                 />
             </div>
@@ -50,6 +56,7 @@ export function PERN() {
                 <Image
                     src={'/expressJSIcon.png'}
                     fill
+                    sizes="(max-width: 640px) 100vw, 400px"
                     alt="Express JS Icon"
                 />
             </div>
@@ -57,6 +64,7 @@ export function PERN() {
                 <Image
                     src={'/reactIcon.png'}
                     fill
+                    sizes="(max-width: 640px) 100vw, 400px"
                     alt="React Icon"
                 />
             </div>
@@ -64,6 +72,7 @@ export function PERN() {
                 <Image
                     src={'/nodeJSIcon.png'}
                     fill
+                    sizes="(max-width: 640px) 100vw, 400px"
                     alt="Node JS Icon"
                 />
             </div>
@@ -78,6 +87,7 @@ export function Languages() {
                 <Image
                     src={'/javascriptIcon.png'}
                     fill
+                    sizes="(max-width: 640px) 100vw, 400px"
                     alt="JavaScript Icon"
                 />
             </div>
@@ -85,6 +95,7 @@ export function Languages() {
                 <Image
                     src={'/pythonIcon.png'}
                     fill
+                    sizes="(max-width: 640px) 100vw, 400px"
                     alt="Python Icon"
                 />
             </div>
@@ -99,6 +110,7 @@ export function Libraries() {
                 <Image
                     src={'/mongooseIcon.png'}
                     fill
+                    sizes="(max-width: 640px) 100vw, 400px"
                     alt="Mongoose Icon"
                 />
             </div>
@@ -106,6 +118,7 @@ export function Libraries() {
                 <Image
                     src={'/sequelizeIcon.png'}
                     fill
+                    sizes="(max-width: 640px) 100vw, 400px"
                     alt="Sequelize Icon"
                 />
             </div>
@@ -120,6 +133,7 @@ export function Frameworks() {
                 <Image
                     src={'/bootstrapIcon.png'}
                     fill
+                    sizes="(max-width: 640px) 100vw, 400px"
                     alt="Bootstrap Icon"
                 />
             </div>
@@ -127,6 +141,7 @@ export function Frameworks() {
                 <Image
                     src={'/sassIcon.png'}
                     fill
+                    sizes="(max-width: 640px) 100vw, 400px"
                     alt="Sass Icon"
                 />
             </div>
@@ -134,6 +149,7 @@ export function Frameworks() {
                 <Image
                     src={'/djangoIcon.png'}
                     fill
+                    sizes="(max-width: 640px) 100vw, 400px"
                     alt="Django Icon"
                 />
             </div>
