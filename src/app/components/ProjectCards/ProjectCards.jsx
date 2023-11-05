@@ -89,6 +89,7 @@ const ProjectCards = () => {
                         />
                         <Button
                             name="Click for Details"
+                            style={styles.custom_button}
                             onClick={() => toggleExpansion(index)}
                         />
                     </div>

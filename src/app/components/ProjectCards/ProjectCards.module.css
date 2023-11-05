@@ -30,3 +30,9 @@
 .list_item {
     margin: 0.5em 0;
 }
+
+.custom_button:hover {
+    cursor: pointer;
+    border-color: #9900FF;
+    box-shadow: 0.2em 0.3em rgba(153, 0, 255, 0.8);
+}
