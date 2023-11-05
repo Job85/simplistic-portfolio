@@ -31,6 +31,12 @@
     margin: 0.5em 0;
 }
 
+.custom_button {
+    border-color: #00CCFF;
+    border-style: solid;
+    margin-top: 0.3em;
+}
+
 .custom_button:hover {
     cursor: pointer;
     border-color: #9900FF;
