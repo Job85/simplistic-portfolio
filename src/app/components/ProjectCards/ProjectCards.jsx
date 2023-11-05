@@ -3,6 +3,7 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import styles from "./ProjectCards.module.css";
+import Button from "../Button/Button";
 
 const cards = [
     {
@@ -72,7 +73,6 @@ const ProjectCards = () => {
                     <h2>{card.title}</h2>
                     <div
                         className={styles.img_container}
-                        onClick={() => toggleExpansion(index)}
                     >
                         <Image
                             src={card.img}
@@ -87,7 +87,10 @@ const ProjectCards = () => {
                             }}
                         // sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 25vw"
                         />
-
+                        <Button
+                            name="Click for Details"
+                            onClick={() => toggleExpansion(index)}
+                        />
                     </div>
                     {expandedStates[index] ? (
 
