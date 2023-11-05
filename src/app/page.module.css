@@ -59,3 +59,9 @@ https://www.julienthibeaut.xyz/blog/create-animated-gradient-borders-with-css
 .bold {
     font-weight: 900;
 }
+
+.custom_button:hover {
+    cursor: pointer;
+    border-color: #FF6EC7;
+    box-shadow: 0.2em 0.3em rgba(255, 110, 199, 0.8);
+}

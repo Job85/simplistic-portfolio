@@ -15,6 +15,7 @@ export default function Home() {
       </div>
       <Button
         name="Get in Touch"
+        style={styles.custom_button}
       />
     </div>
   )
