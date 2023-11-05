@@ -6,6 +6,8 @@
         "header header header ."
         ". card card ."
     ;
+    width: 80vw;
+    margin: 0 1em;
 }
 
 .page_header {
@@ -14,4 +16,10 @@
 
 .project_container {
     grid-area: card;
+}
+
+@media (max-width: 650px) {
+    .container {
+        width: 70vw;
+    }
 }
