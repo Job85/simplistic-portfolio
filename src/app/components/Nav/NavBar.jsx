@@ -25,7 +25,7 @@ const NavBar = () => {
                     About
                 </Link>
                 <Link
-                    className={styles.nav_link}
+                    className={`${styles.nav_link} ${pathname === '/projects' ? styles.active_link : ''}`}
                     href="/projects"
                 >
                     Projects
