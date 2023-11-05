@@ -60,6 +60,12 @@ https://www.julienthibeaut.xyz/blog/create-animated-gradient-borders-with-css
     font-weight: 900;
 }
 
+.custom_button {
+    border-color: #00CCFF;
+    border-style: solid;
+    margin: 3em 2em 5em 2em;
+}
+
 .custom_button:hover {
     cursor: pointer;
     border-color: #FF6EC7;
