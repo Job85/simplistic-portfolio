@@ -3,9 +3,3 @@
     border-style: solid;
     margin-top: 0.3em;
 }
-
-.button:hover {
-    cursor: pointer;
-    border-color: #9900FF;
-    box-shadow: 0.2em 0.3em rgba(153, 0, 255, 0.8);
-}
