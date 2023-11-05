@@ -1,3 +1,6 @@
+'use client'
+
+import React, { useState } from "react";
 import Image from "next/image";
 import styles from "./ProjectCards.module.css";
 
@@ -49,60 +52,79 @@ const cards = [
 
 const ProjectCards = () => {
 
+    const [expandedStates, setExpandedStates] = useState(cards.map(() => false));
+
+    const toggleExpansion = (index) => {
+        const newExpandedStates = [...expandedStates];
+        newExpandedStates[index] = !newExpandedStates[index];
+        setExpandedStates(newExpandedStates);
+    };
+
     return (
         <div className={styles.container}>
-            {cards.map((card) => (
+            {cards.map((card, index) => (
                 <div
                     key={card.id}
                     className={styles.card_container}
                 >
                     <h2>{card.title}</h2>
-                    <div className={styles.img_container}>
+                    <div
+                        className={styles.img_container}
+                        onClick={() => toggleExpansion(index)}
+                    >
                         <Image
                             src={card.img}
                             alt={card.title}
-                            layout="responsive"
+                            // fill
                             width={400}
                             height={300}
-                            sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 25vw"
+                            sizes="100vw"
+                            style={{
+                                width: '100%',
+                                height: 'auto',
+                            }}
+                        // sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 25vw"
                         />
 
                     </div>
-                    <div>
-                        <h3>{card.subTitle}</h3>
-                        <ul className={styles.list}>
-                            {card.listGroup.map((item, index) =>
-                                <li
-                                    className={styles.list_item}
-                                    key={index}
-                                >
-                                    {item}
-                                </li>
-                            )}
-                        </ul>
-                        <h3>{card.subTitle2}</h3>
-                        <ul className={styles.list}>
-                            {card.listGroup2.map((item, index) =>
-                                <li
-                                    className={styles.list_item}
-                                    key={index}
-                                >
-                                    {item}
-                                </li>
-                            )}
-                        </ul>
-                        <h3>{card.subTitle3}</h3>
-                        <ul className={styles.list}>
-                            {card.listGroup3.map((item, index) =>
-                                <li
-                                    className={styles.list_item}
-                                    key={index}
-                                >
-                                    {item}
-                                </li>
-                            )}
-                        </ul>
-                    </div>
+                    {expandedStates[index] ? (
+
+                        <div>
+                            <h3>{card.subTitle}</h3>
+                            <ul className={styles.list}>
+                                {card.listGroup.map((item, itemIndex) =>
+                                    <li
+                                        className={styles.list_item}
+                                        key={itemIndex}
+                                    >
+                                        {item}
+                                    </li>
+                                )}
+                            </ul>
+                            <h3>{card.subTitle2}</h3>
+                            <ul className={styles.list}>
+                                {card.listGroup2.map((item, itemIndex) =>
+                                    <li
+                                        className={styles.list_item}
+                                        key={itemIndex}
+                                    >
+                                        {item}
+                                    </li>
+                                )}
+                            </ul>
+                            <h3>{card.subTitle3}</h3>
+                            <ul className={styles.list}>
+                                {card.listGroup3.map((item, itemIndex) =>
+                                    <li
+                                        className={styles.list_item}
+                                        key={itemIndex}
+                                    >
+                                        {item}
+                                    </li>
+                                )}
+                            </ul>
+                        </div>
+                    ) : null}
                 </div>
             ))}
         </div>
