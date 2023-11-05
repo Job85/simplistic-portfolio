@@ -52,8 +52,10 @@ const cards = [
 
 const ProjectCards = () => {
 
+    // set state of toggled card
     const [expandedStates, setExpandedStates] = useState(cards.map(() => false));
 
+    // toggles individual cards to expand details
     const toggleExpansion = (index) => {
         const newExpandedStates = [...expandedStates];
         newExpandedStates[index] = !newExpandedStates[index];
