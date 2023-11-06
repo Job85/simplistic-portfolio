@@ -41,3 +41,13 @@
     margin: 1em 1em 1em 1em;
     padding: 2em 2em 2em 2em;
 }
+
+.stack {
+    display: flex;
+    flex-direction: column;
+
+    @media (max-width: 628px) {
+        display: flex;
+        flex-direction: row;
+    }
+}
