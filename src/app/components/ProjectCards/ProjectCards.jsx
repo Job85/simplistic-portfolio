@@ -135,7 +135,7 @@ const ProjectCards = () => {
                                     <a
                                         href={card.site}
                                         target="_blank"
-                                        style={{ color: '#ff6ec7' }}
+                                        style={{ color: '#9900FF' }}
                                     >
                                         Deployed Site
                                     </a>
@@ -144,7 +144,7 @@ const ProjectCards = () => {
                                         <a
                                             href={card.gitHub}
                                             target="_blank"
-                                            style={{ color: '#ff6ec7' }}
+                                            style={{ color: '#9900FF' }}
                                         >
                                             Front-End Repo
                                         </a>
@@ -154,7 +154,7 @@ const ProjectCards = () => {
                                         <a
                                             href={card.gitHub2}
                                             target="_blank"
-                                            style={{ color: '#ff6ec7' }}
+                                            style={{ color: '#9900FF' }}
                                         >
                                             Back-End Repo
                                         </a>
