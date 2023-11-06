@@ -26,8 +26,6 @@ export default function About() {
                     </h3>
                     <div className={styles.stack}>
                         <MERN />
-                    </div>
-                    <div className={styles.stack}>
                         <PERN />
                     </div>
                 </div>
