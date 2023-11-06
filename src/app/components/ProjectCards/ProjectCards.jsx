@@ -161,7 +161,7 @@ const ProjectCards = () => {
                                     )}
                                     {!card.gitHub && !card.gitHub2 && (
                                         <h5
-                                            style={{ fontStyle: 'italic' }}
+                                            style={{ fontStyle: 'italic', color: '#9900FF' }}
                                         >
                                             Repositories Are Private
                                         </h5>
