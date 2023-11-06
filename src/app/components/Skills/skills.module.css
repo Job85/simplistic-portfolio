@@ -20,4 +20,10 @@
     position: relative;
     height: 6em;
     width: 6em;
+    box-shadow: 0 0 10px #A6A6A6;
+    border-radius: 0.5em;
+}
+
+.js_icon {
+    border-radius: 0.75em;
 }
