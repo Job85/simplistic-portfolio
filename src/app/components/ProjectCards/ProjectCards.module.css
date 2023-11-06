@@ -42,3 +42,9 @@
     border-color: #9900FF;
     box-shadow: 0.2em 0.3em rgba(153, 0, 255, 0.8);
 }
+
+.anchor {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
