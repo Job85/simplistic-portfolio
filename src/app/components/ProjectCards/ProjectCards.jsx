@@ -129,6 +129,46 @@ const ProjectCards = () => {
                                     </li>
                                 )}
                             </ul>
+                            <div>
+                                <h4>Links</h4>
+                                <div className={styles.anchor}>
+
+                                    <a
+                                        href={card.site}
+                                        target="_blank"
+                                        style={{ color: '#ff6ec7' }}
+                                    >
+                                        Deployed Site
+                                    </a>
+                                    {card.gitHub && (
+
+                                        <a
+                                            href={card.gitHub}
+                                            target="_blank"
+                                            style={{ color: '#ff6ec7' }}
+                                        >
+                                            Front-End Repo
+                                        </a>
+                                    )}
+                                    {card.gitHub2 && (
+
+                                        <a
+                                            href={card.gitHub2}
+                                            target="_blank"
+                                            style={{ color: '#ff6ec7' }}
+                                        >
+                                            Back-End Repo
+                                        </a>
+                                    )}
+                                    {!card.gitHub && !card.gitHub2 && (
+                                        <h5
+                                            style={{ fontStyle: 'italic' }}
+                                        >
+                                            Repositories Are Private
+                                        </h5>
+                                    )}
+                                </div>
+                            </div>
                         </div>
                     ) : null}
                 </div>
