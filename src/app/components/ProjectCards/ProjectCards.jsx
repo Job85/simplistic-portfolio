@@ -10,6 +10,7 @@ const cards = [
         id: "1",
         img: "/Restaurant-Inventory-App.png",
         title: "Restaurant Inventory App",
+        desc: "A web app for the hospitality industry designed to streamline the inventory process. Using REST API's users have the ability to perform full CRUD of the items model.",
         title2: "Technologies",
         site: "https://restaurant-inventory-77229.web.app/",
         gitHub: "https://github.com/Job85/Restaurant-Inventory-App",
@@ -25,6 +26,7 @@ const cards = [
         id: "2",
         img: "/Token_Huntr.png",
         title: "Token Huntr",
+        desc: "A web app for the adventerous to go Geo Caching. Using REST API's users have the ability to perform full CRUD of the locations model.",
         title2: "Technologies",
         site: "https://token-huntr-app.web.app/",
         gitHub: "https://github.com/Job85/token-huntr-app",
@@ -41,6 +43,7 @@ const cards = [
         variant: "click",
         img: "/QCDetailing.png",
         title: "QC Detailing",
+        desc: "A website built for a client per their details and with UX and UI design standards per my suggestions.",
         title2: "Technologies",
         site: "https://qcdetailing.net/",
         subTitle: "Languages",
@@ -70,22 +73,27 @@ const ProjectCards = () => {
                     key={card.id}
                     className={styles.card_container}
                 >
-                    <h2>{card.title}</h2>
-                    <div
-                        className={styles.img_container}
-                    >
-                        <Image
-                            src={card.img}
-                            alt={card.title}
-                            // fill
-                            width={400}
-                            height={300}
-                            sizes="100vw"
-                            style={{
-                                width: '100%',
-                                height: 'auto',
-                            }}
-                        />
+                    <div>
+                        <h2>{card.title}</h2>
+                        <div
+                            className={styles.img_container}
+                        >
+                            <Image
+                                src={card.img}
+                                alt={card.title}
+                                // fill
+                                width={400}
+                                height={300}
+                                sizes="100vw"
+                                style={{
+                                    width: '100%',
+                                    height: 'auto',
+                                }}
+                            />
+                        </div>
+                        <div>
+                            {card.desc}
+                        </div>
                         <Button
                             name={expandedStates[index] ? "Click to Close" : "Click for Details"}
                             style={styles.custom_button}
