@@ -85,10 +85,9 @@ const ProjectCards = () => {
                                 width: '100%',
                                 height: 'auto',
                             }}
-                        // sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 25vw"
                         />
                         <Button
-                            name="Click for Details"
+                            name={expandedStates[index] ? "Click to Close" : "Click for Details"}
                             style={styles.custom_button}
                             onClick={() => toggleExpansion(index)}
                         />
