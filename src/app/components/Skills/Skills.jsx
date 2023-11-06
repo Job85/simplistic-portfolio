@@ -89,6 +89,7 @@ export function Languages() {
                     fill
                     sizes="(max-width: 640px) 100vw, 400px"
                     alt="JavaScript Icon"
+                    className={styles.js_icon}
                 />
             </div>
             <div className={styles.img_container}>
