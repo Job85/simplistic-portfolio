@@ -12,6 +12,8 @@
 
 .page_header {
     grid-area: header;
+    text-shadow: 10px 10px 5px #FF6EC7;
+    -webkit-text-stroke: 1px #000;
 }
 
 .project_container {
