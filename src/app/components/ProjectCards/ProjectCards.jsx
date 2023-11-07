@@ -102,7 +102,7 @@ const ProjectCards = () => {
                     </div>
                     {expandedStates[index] ? (
 
-                        <div>
+                        <div className={styles.expanded}>
                             <h3>{card.subTitle}</h3>
                             <ul className={styles.list}>
                                 {card.listGroup.map((item, itemIndex) =>
