@@ -16,12 +16,10 @@
     text-shadow: 0 0 10px #FF6EC7, 0 0 15px #FF6EC7, 0 0 20px #FF6EC7;
     color: transparent;
     -webkit-text-stroke: 1px #FF6EC7;
-    font-size: 4em;
+    font-size: 6em;
     font-weight: 100;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
 
 .page_header:hover {
@@ -53,5 +51,7 @@
 @media (max-width: 650px) {
     .container {
         width: 70vw;
+        justify-content: start;
+        margin: 1em;
     }
 }
