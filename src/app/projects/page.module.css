@@ -12,8 +12,11 @@
 
 .page_header {
     grid-area: header;
-    text-shadow: 10px 10px 5px #FF6EC7;
-    -webkit-text-stroke: 1px #000;
+    text-shadow: 0 0 10px #FF6EC7, 0 0 15px #FF6EC7, 0 0 20px #FF6EC7;
+    color: #000;
+    -webkit-text-stroke: 1px #FF6EC7;
+    font-size: 4em;
+    font-weight: 300;
 }
 
 .project_container {
