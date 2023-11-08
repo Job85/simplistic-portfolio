@@ -13,10 +13,29 @@
 .page_header {
     grid-area: header;
     text-shadow: 0 0 10px #FF6EC7, 0 0 15px #FF6EC7, 0 0 20px #FF6EC7;
-    color: #000;
+    color: transparent;
     -webkit-text-stroke: 1px #FF6EC7;
     font-size: 4em;
-    font-weight: 400;
+    font-weight: 100;
+}
+
+.page_header:hover {
+    animation: neonFlicker 1s infinite;
+}
+
+
+@keyframes neonFlicker {
+    0% {
+        opacity: 0.8;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0.8;
+    }
 }
 
 .project_container {
