@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export function MERN() {
     return (
-        <div className={styles.skills_container}>
+        <div className={`${styles.skills_container} ${styles.stacks_container}`}>
             <div className={styles.img_container}>
                 <Image
                     src={'/mongoDBIcon.png'}
@@ -43,7 +43,7 @@ export function MERN() {
 
 export function PERN() {
     return (
-        <div className={styles.skills_container}>
+        <div className={`${styles.skills_container} ${styles.stacks_container}`}>
             <div className={styles.img_container}>
                 <Image
                     src={'/postgreSQLIcon.png'}
@@ -129,7 +129,7 @@ export function Libraries() {
 
 export function Frameworks() {
     return (
-        <div className={styles.skills_container}>
+        <div className={`${styles.skills_container} ${styles.frameworks_container}`}>
             <div className={styles.img_container}>
                 <Image
                     src={'/bootstrapIcon.png'}
