@@ -11,7 +11,7 @@
     max-width: 1200px;
     gap: 1em;
 
-    @media (max-width: 628px) {
+    @media (max-width: 638px) {
         flex-direction: column;
     }
 }
