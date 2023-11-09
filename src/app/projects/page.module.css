@@ -14,8 +14,6 @@
 .page_header {
     grid-area: header;
     text-shadow: 0 0 10px #FF6EC7, 0 0 15px #FF6EC7, 0 0 20px #FF6EC7, 0 0 30px #FF6EC7, 0 0 40px #FF6EC7;
-    /* color: transparent; */
-    /* -webkit-text-stroke: 1px #FF6EC7; */
     color: #FF6EC7;
     -webkit-text-stroke: 1px transparent;
     box-shadow: 0 0 20px 10px rgba(255, 110, 199, 0.6);
@@ -23,8 +21,7 @@
     font-weight: 100;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    padding: 0.5em;
+    padding: 0.15em;
     margin: 1em;
 }
 
