@@ -30,18 +30,20 @@ const NavBar = () => {
                 >
                     Projects
                 </Link>
-                <Link
+                <a
                     className={styles.nav_link}
-                    href=""
+                    href="https://github.com/Job85"
+                    target="_blank"
                 >
                     GitHub
-                </Link>
-                <Link
+                </a>
+                <a
                     className={styles.nav_link}
-                    href=""
+                    href="https://www.linkedin.com/in/julian-jernigan813/"
+                    target="_blank"
                 >
                     LinkedIn
-                </Link>
+                </a>
             </ul>
         </nav>
     )
