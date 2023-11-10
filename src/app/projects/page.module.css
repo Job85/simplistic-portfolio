@@ -13,10 +13,9 @@
 
 .page_header {
     grid-area: header;
-    text-shadow: 0 0 10px #FF6EC7, 0 0 15px #FF6EC7, 0 0 20px #FF6EC7, 0 0 30px #FF6EC7, 0 0 40px #FF6EC7;
+    text-shadow: 0 0 10px #FF6EC7, 0 0 15px #FF6EC7, 0 0 20px #FF6EC7, 0 0 30px #FF6EC7, 0 0 35px #FF6EC7, 0 0 40px #FF6EC7;
     color: #FF6EC7;
-    -webkit-text-stroke: 1px transparent;
-    box-shadow: 0 0 20px 10px rgba(255, 110, 199, 0.6);
+    -webkit-text-stroke: 0.5px #000;
     font-size: 6em;
     font-weight: 100;
     display: flex;
@@ -33,17 +32,17 @@
 @keyframes neonFlicker {
     0% {
         opacity: 0.9;
-        text-shadow: 0 0 10px #FF6EC7, 0 0 15px #FF6EC7, 0 0 20px #FF6EC7;
+        text-shadow: 0 0 10px #FF6EC7, 0 0 15px #FF6EC7, 0 0 20px #FF6EC7, 0 0 25px #FF6EC7, 0 0 30px #FF6EC7;
     }
 
     50% {
         opacity: 1;
-        text-shadow: 0 0 15px #FF6EC7, 0 0 20px #FF6EC7, 0 0 25px #FF6EC7;
+        text-shadow: 0 0 15px #FF6EC7, 0 0 20px #FF6EC7, 0 0 25px #FF6EC7, 0 0 30px #FF6EC7, 0 0 35px #FF6EC7;
     }
 
     100% {
         opacity: 0.9;
-        text-shadow: 0 0 10px #FF6EC7, 0 0 15px #FF6EC7, 0 0 20px #FF6EC7;
+        text-shadow: 0 0 10px #FF6EC7, 0 0 15px #FF6EC7, 0 0 20px #FF6EC7, 0 0 25px #FF6EC7, 0 0 30px #FF6EC7;
     }
 }
 
