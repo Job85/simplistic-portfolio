@@ -1,7 +1,11 @@
 import styles from './page.module.css';
 import Button from './components/Button/Button';
+import TypeWriter from './components/TypeWriter/TypeWriter';
 
 export default function Home() {
+
+  const textArray = ["Heeey yooouu guys!", "Get in touch!"]
+
   return (
     <div>
       <div className={styles.container}>
@@ -13,10 +17,17 @@ export default function Home() {
           Hi, I'm <span className={styles.bold}>Julian Jernigan</span>, a <span className={styles.bold}>full-stack</span> software engineer with a focus on <span className={styles.bold}>back-end</span> development
         </h2>
       </div>
+      <div>
+
+      </div>
       <Button
-        name="Get in Touch"
         style={styles.custom_button}
-      />
+      >
+        <TypeWriter
+          texts={textArray}
+        />
+
+      </Button>
     </div>
   )
 }
