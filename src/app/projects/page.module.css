@@ -6,7 +6,7 @@
         ". header header ."
         ". card card ."
     ;
-    width: 100vw;
+    width: 100%;
     margin: 0 auto;
     justify-content: center;
 }
@@ -56,8 +56,13 @@
 
 @media (max-width: 650px) {
     .container {
-        width: 100%;
+        width: 90%;
         justify-content: start;
         margin: 1em;
+    }
+
+    .page_header {
+        margin: 0.25em;
+        font-size: 4em;
     }
 }
