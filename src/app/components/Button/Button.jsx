@@ -8,8 +8,8 @@ const Button = ({ children, name, onClick, style }) => {
             className={`${styles.button} ${style}`}
             onClick={onClick}
         >
-            {children}
             {name}
+            {children}
         </button>
     )
 }
