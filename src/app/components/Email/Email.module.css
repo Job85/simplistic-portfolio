@@ -1,0 +1,82 @@
+.form {
+    padding: 3rem;
+    width: 20rem;
+    margin: 0 1em;
+}
+
+.input_text {
+    display: flex;
+    flex-direction: column;
+    border: 0.5em dotted #00CCFF;
+    animation: lightsBlink 2s linear infinite;
+    outline: 0.25rem double #FF6EC7;
+    margin-bottom: 0.5em;
+    position: relative;
+}
+
+.input_text::before {
+    content: "";
+    position: absolute;
+    top: -0.01rem;
+    left: -0.01rem;
+    right: -0.01rem;
+    bottom: -0.01rem;
+    border: 0.15rem solid #FF6EC7;
+    animation: encircle 4s linear infinite;
+}
+
+@keyframes lightsBlink {
+
+    0%,
+    100% {
+        border-color: #00CCFF;
+        box-shadow: 0 0 10px rgba(0, 204, 255, 0.5);
+    }
+
+    50% {
+        border-color: rgba(0, 204, 255, 0.5);
+        box-shadow: 0 0 10px rgba(0, 204, 255, 0.8);
+    }
+}
+
+/* @keyframes encircle {
+    0% {
+        top: -0.01rem;
+        left: -0.01rem;
+        right: -0.01rem;
+        bottom: -0.01rem;
+    }
+
+    25% {
+        top: -0.01rem;
+        left: 0.99rem;
+        right: -0.01rem;
+        bottom: -0.01rem;
+    }
+
+    50% {
+        top: -0.01rem;
+        left: 0.99rem;
+        right: 0.99rem;
+        bottom: -0.01rem;
+    }
+
+    75% {
+        top: -0.01rem;
+        left: 0.99rem;
+        right: 0.99rem;
+        bottom: 0.99rem;
+    }
+
+    100% {
+        top: -0.01rem;
+        left: -0.01rem;
+        right: 0.99rem;
+        bottom: 0.99rem;
+    }
+} */
+
+.input_text textarea {
+    resize: vertical;
+    min-height: 2rem;
+}

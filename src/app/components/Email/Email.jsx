@@ -2,7 +2,8 @@
 
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
-// import styles from "./Email.module.css";
+import Button from "../Button/Button";
+import styles from "./Email.module.css";
 
 export const EmailForm = () => {
 
@@ -10,38 +11,46 @@ export const EmailForm = () => {
 
     const sendEmail = (e) => {
         e.preventDefault();
-        emailjs.sendForm('process.env.EMAIL_JS_SERVICE_ID', 'process.env.EMAIL_JS_Template_ID', form.current, 'process.env.EMAIL_JS_Public_Key')
-            .then((result) => {
-                console.log(result.text);
-                console.log("message sent!")
-            }, (error) => {
-                console.log(error.text);
-                console.log("error sending message, try again!")
-            });
+        emailjs.sendForm(
+            process.env.NEXT_PUBLIC_EMAIL_JS_SERVICE_ID,
+            process.env.NEXT_PUBLIC_EMAIL_JS_TEMPLATE_ID,
+            form.current,
+            process.env.NEXT_PUBLIC_EMAIL_JS_PUBLIC_KEY
+        ).then((result) => {
+            console.log(result.text);
+            console.log("message sent!")
+        }, (error) => {
+            console.log(error.text);
+            console.log("error sending message, try again!")
+        });
     }
 
     return (
         <form
+            className={styles.form}
             ref={form}
             onSubmit={sendEmail}
         >
-            <input
-                name="user_email"
-                type="email"
-                placeholder="Email"
-                required
-            />
-            <textarea
-                name="user_message"
-                placeholder="Write message..."
-                required
-            >
-            </textarea>
-            <button
+            <div className={styles.input_text}>
+                <input
+                    name="user_email"
+                    type="email"
+                    placeholder="Your Email"
+                    required
+                />
+                <textarea
+                    name="user_message"
+                    placeholder="Write message..."
+                    required
+                >
+                </textarea>
+            </div>
+            <Button
                 type="submit"
+                className={styles.custom_button}
             >
                 Send Message
-            </button>
+            </Button>
         </form>
     )
 }
