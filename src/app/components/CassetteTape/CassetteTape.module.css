@@ -1,0 +1,52 @@
+.cassette {
+    position: relative;
+    background-color: #00CED1;
+    border: .2em solid #00CCFF;
+    border-radius: .3em;
+    width: 2.25em;
+    height: 1em;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.reels {
+    position: absolute;
+    z-index: 5;
+    top: 40%;
+    left: 50%;
+    background-color: #FF0066;
+    width: 1em;
+    height: 0.06em;
+    border-radius: 4px;
+    transform: translate(-50%, -50%);
+}
+
+.reel {
+    position: absolute;
+    width: 0.3em;
+    height: 0.3em;
+    background-color: #FF0066;
+    border-radius: 50%;
+    top: 250%;
+    transform: translate(-50%, -50%);
+}
+
+.right {
+    right: 0.65em;
+}
+
+.left {
+    left: 0.95em;
+}
+
+.tape {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 0.55em;
+    transform: translate(-50%, -50%);
+    background-color: #eee;
+    width: 80%;
+    height: 120%;
+    z-index: 1;
+}
