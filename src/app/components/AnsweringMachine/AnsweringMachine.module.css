@@ -1,0 +1,133 @@
+.machine {
+    position: relative;
+    border: 0.25em solid #00CED1;
+    width: 5.9em;
+    height: 5em;
+    margin-left: 3em;
+    background-color: #43464B;
+}
+
+.panel1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    top: 10%;
+    left: 0.5em;
+    position: absolute;
+}
+
+.window {
+    position: absolute;
+    top: -25%;
+    left: 150%;
+    border: 2px solid #FF6EC7;
+    border-radius: 4px;
+    height: 3.25em;
+}
+
+.window> :first-child {
+    margin-bottom: 0.5em;
+}
+
+.panel2 {
+    border: 2px solid #FF6EC7;
+    position: absolute;
+    top: 4em;
+    width: 96%;
+    height: 15%;
+    display: flex;
+    flex-direction: row;
+}
+
+.panel2> :first-child {
+    margin-left: 0.25em;
+    margin-right: 0.25em;
+}
+
+.dial {
+    border: 2px solid #FF0066;
+    border-radius: 50%;
+    width: 0.25em;
+    height: 0.25em;
+    margin-top: 2%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dial_knob {
+    border: 0.5px solid #FF0066;
+    width: 80%;
+    height: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.knob1 {
+    transform: rotate(115deg);
+}
+
+.knob2 {
+    transform: rotate(45deg);
+}
+
+.button_group {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    width: 65%;
+    height: 90%;
+    left: 2.5em;
+    top: 2%;
+}
+
+.button_group> :first-child {
+    margin-right: 1em;
+}
+
+.button_group> :nth-child(2) {
+    margin-right: 1em;
+    margin-left: 1em;
+}
+
+.button_group> :last-child {
+    margin-left: 1em;
+}
+
+.button {
+    border: 0.25px solid #00CED1;
+    height: 100%;
+    width: 15%;
+    background-color: #43464B;
+    box-shadow: -0.5px 0.5px 0.5px rgba(0, 0, 0, 0.3), 0.5px 0.5px 0.5px rgba(0, 0, 0, 0.3);
+    font-size: 2px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* .panel1> :first-child {
+    margin-right: 1em;
+}
+
+.panel1> :last-child {
+    margin-left: 2em;
+}
+
+.window {
+    position: absolute;
+    top: 0.1%;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 2px solid #FF6EC7;
+    border-radius: 4px;
+
+}
+
+.window> :first-child {
+    margin-bottom: .25em;
+} */
