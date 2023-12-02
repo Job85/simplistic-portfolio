@@ -109,25 +109,3 @@
     align-items: center;
     justify-content: center;
 }
-
-/* .panel1> :first-child {
-    margin-right: 1em;
-}
-
-.panel1> :last-child {
-    margin-left: 2em;
-}
-
-.window {
-    position: absolute;
-    top: 0.1%;
-    left: 50%;
-    transform: translateX(-50%);
-    border: 2px solid #FF6EC7;
-    border-radius: 4px;
-
-}
-
-.window> :first-child {
-    margin-bottom: .25em;
-} */
