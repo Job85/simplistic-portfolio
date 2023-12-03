@@ -49,7 +49,7 @@ export const EmailForm = () => {
                 type="submit"
                 className={styles.custom_button}
             >
-                Send Message
+                Leave Message
             </Button>
         </form>
     )
