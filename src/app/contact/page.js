@@ -7,8 +7,8 @@ export default function Contact() {
 
     const text = ["Please leave a message after the beep..."]
     return (
-        <div>
-            <div className={styles.message}>
+        <div className={styles.container} >
+            <div className={styles.messanger}>
                 <div className={styles.text_bubble}>
                     <TypeWriter
                         texts={text}
@@ -18,7 +18,11 @@ export default function Contact() {
                     <AnsweringMachine />
                 </div>
             </div>
-            <EmailForm />
+            <div className={styles.email_container}>
+                <div className={styles.email}>
+                    <EmailForm />
+                </div>
+            </div>
         </div>
     )
 }

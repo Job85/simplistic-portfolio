@@ -1,11 +1,26 @@
+.container {
+    display: grid;
+    grid-template-areas:
+        'messanger'
+        'email'
+    ;
+    margin: 0 auto;
+}
+
+.messanger {
+    margin-left: 4em;
+    grid-area: messanger;
+}
+
 .text_bubble {
     position: relative;
-    max-width: 300px;
-    padding: 10px;
+    max-width: 200px;
+    padding: 1em;
     background-color: #fff;
-    border-radius: 10px;
-    border: 2px solid #000;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 3em;
+    border: 2px solid #9900FF;
+    box-shadow: 0 4px 8px 10px rgba(153, 0, 255, 0.6);
+    font-size: 0.25em;
 }
 
 .text_bubble::before {
@@ -14,6 +29,22 @@
     top: 100%;
     left: 50%;
     margin-left: -10px;
-    border-top: 100px solid #fff;
-    border-right: 100px solid transparent;
+    border-top: 10em solid #fff;
+    border-right: 10em solid transparent;
+}
+
+.answering_machine {
+    margin-top: 3em;
+    position: relative;
+    left: 1.3em;
+}
+
+.email_container {
+    grid-area: email;
+}
+
+.email {
+    position: absolute;
+    top: 20em;
+    left: 12em;
 }
