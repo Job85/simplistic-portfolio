@@ -40,7 +40,7 @@ export const EmailForm = () => {
                 />
                 <textarea
                     name="user_message"
-                    placeholder="Write message..."
+                    placeholder="Beep..."
                     required
                 >
                 </textarea>
