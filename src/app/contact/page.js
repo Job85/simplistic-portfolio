@@ -5,7 +5,7 @@ import TypeWriter from "../components/TypeWriter/TypeWriter";
 
 export default function Contact() {
 
-    const text = ["Please leave a message after the beep..."]
+    const text = ["Please leave your email and a brief message after the beep..."]
     return (
         <div className={styles.container} >
             <div className={styles.messanger}>
