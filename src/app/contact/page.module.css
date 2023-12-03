@@ -39,12 +39,11 @@
     left: 1.3em;
 }
 
-.email_container {
-    grid-area: email;
-}
-
 .email {
+    grid-area: email;
     position: absolute;
     top: 20em;
     left: 12em;
 }
+
+/* @media screen and (max-width) */

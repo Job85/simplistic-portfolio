@@ -18,10 +18,8 @@ export default function Contact() {
                     <AnsweringMachine />
                 </div>
             </div>
-            <div className={styles.email_container}>
-                <div className={styles.email}>
-                    <EmailForm />
-                </div>
+            <div className={styles.email}>
+                <EmailForm />
             </div>
         </div>
     )
