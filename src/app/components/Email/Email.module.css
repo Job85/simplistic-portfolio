@@ -14,17 +14,6 @@
     position: relative;
 }
 
-.input_text::before {
-    content: "";
-    position: absolute;
-    top: -0.01rem;
-    left: -0.01rem;
-    right: -0.01rem;
-    bottom: -0.01rem;
-    border: 0.15rem solid #FF6EC7;
-    animation: encircle 4s linear infinite;
-}
-
 @keyframes lightsBlink {
 
     0%,
@@ -38,43 +27,6 @@
         box-shadow: 0 0 10px rgba(0, 204, 255, 0.8);
     }
 }
-
-/* @keyframes encircle {
-    0% {
-        top: -0.01rem;
-        left: -0.01rem;
-        right: -0.01rem;
-        bottom: -0.01rem;
-    }
-
-    25% {
-        top: -0.01rem;
-        left: 0.99rem;
-        right: -0.01rem;
-        bottom: -0.01rem;
-    }
-
-    50% {
-        top: -0.01rem;
-        left: 0.99rem;
-        right: 0.99rem;
-        bottom: -0.01rem;
-    }
-
-    75% {
-        top: -0.01rem;
-        left: 0.99rem;
-        right: 0.99rem;
-        bottom: 0.99rem;
-    }
-
-    100% {
-        top: -0.01rem;
-        left: -0.01rem;
-        right: 0.99rem;
-        bottom: 0.99rem;
-    }
-} */
 
 .input_text textarea {
     resize: vertical;
