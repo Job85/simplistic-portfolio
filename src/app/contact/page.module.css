@@ -46,4 +46,9 @@
     left: 12em;
 }
 
-/* @media screen and (max-width) */
+@media screen and (max-width: 600px) {
+    .email {
+        position: static;
+        left: auto;
+    }
+}
