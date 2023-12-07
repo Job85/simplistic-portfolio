@@ -13,7 +13,7 @@ const press_start_2P = Press_Start_2P({
 })
 
 
-const TypeWriter = ({ texts, onAnimationComplete, onCompleteDelay }) => {
+const TypeWriter = ({ texts, onAnimationComplete, onCompleteDelay, delayAfterComplete, style, fontClassNames }) => {
     const [currentText, setCurrentText] = useState('');
     const [currentTextIndex, setCurrentTextIndex] = useState(0);
     let speed = 50;
@@ -34,7 +34,7 @@ const TypeWriter = ({ texts, onAnimationComplete, onCompleteDelay }) => {
                         if (onAnimationComplete) {
                             setTimeout(() => {
                                 onAnimationComplete();
-                            }, onCompleteDelay);
+                            }, onCompleteDelay, delayAfterComplete);
                         }
                     }
                 }
@@ -45,7 +45,7 @@ const TypeWriter = ({ texts, onAnimationComplete, onCompleteDelay }) => {
     }, [texts, currentText, currentTextIndex]);
 
     return (
-        <p className={`${styles.text} ${press_start_2P.className}`}>
+        <p className={`${styles.text} ${press_start_2P.className} ${currentTextIndex === 0 ? style : ''} ${fontClassNames[currentTextIndex]}`}>
             {currentText}
         </p>
     )

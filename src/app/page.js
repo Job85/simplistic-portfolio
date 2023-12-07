@@ -5,6 +5,10 @@ import { useRouter } from 'next/navigation';
 import styles from './page.module.css';
 import Button from './components/Button/Button';
 import TypeWriter from './components/TypeWriter/TypeWriter';
+import localFont from 'next/font/local';
+
+const myFont = localFont({ src: './fonts/BTTF.ttf' });
+const gooniesFont = localFont({ src: './fonts/Goonies.ttf' });
 
 export default function Home() {
   const [animationComplete, setAnimationComplete] = useState(false);
@@ -12,7 +16,7 @@ export default function Home() {
   const router = useRouter();
 
   const textArray = ["Heeey yooouu guys!", "Get in touch!"]
-  const text2 = ["Where we're going. We don't need roads."]
+  const text2 = ["Where we're going. We don't need roads <"]
 
   const handleAnimationComplete = () => {
     setAnimationComplete(true);
@@ -27,7 +31,7 @@ export default function Home() {
     if (animationComplete) {
       setTimeout(() => {
         setPageTransition(true);
-      }, 1000)
+      }, 1500)
     }
   }, [animationComplete]);
 
@@ -39,6 +43,8 @@ export default function Home() {
             texts={text2}
             onAnimationComplete={handleAnimationComplete}
             onCompleteDelay={1000}
+            style={styles.custom_text}
+            fontClassNames={[myFont.className]}
           />
         </div>
       )}
@@ -62,6 +68,11 @@ export default function Home() {
               >
                 <TypeWriter
                   texts={textArray}
+                  fontClassNames={[gooniesFont.className]}
+                  style={styles.custom_text}
+                  applyCustomStyleToFirstString={true}
+                  onCompleteDelay={10000}
+                  delayAfterComplete={3000}
                 />
 
               </Button>
