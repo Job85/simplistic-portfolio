@@ -44,7 +44,7 @@ const TypeWriter = ({ texts, onAnimationComplete, onCompleteDelay, delayAfterCom
     }, [texts, currentText, currentTextIndex, delayAfterComplete, onAnimationComplete, onCompleteDelay, speed]);
 
     return (
-        <p className={`${styles.text} ${press_start_2P.className} ${currentTextIndex === 0 ? style : ''} ${fontClassNames[currentTextIndex]}`}>
+        <p className={`${styles.text} ${press_start_2P.className} ${currentTextIndex === 0 ? style : ''} ${fontClassNames && Array.isArray(fontClassNames) ? fontClassNames[currentTextIndex] : ''}`}>
             {currentText}
         </p>
     )
