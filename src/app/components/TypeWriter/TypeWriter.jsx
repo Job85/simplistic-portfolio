@@ -42,7 +42,7 @@ const TypeWriter = ({ texts, onAnimationComplete, onCompleteDelay, delayAfterCom
 
             return () => clearInterval(intervalId);
         }
-    }, [texts, currentText, currentTextIndex]);
+    }, [texts, currentText, currentTextIndex, delayAfterComplete, onAnimationComplete, onCompleteDelay, speed]);
 
     return (
         <p className={`${styles.text} ${press_start_2P.className} ${currentTextIndex === 0 ? style : ''} ${fontClassNames[currentTextIndex]}`}>
