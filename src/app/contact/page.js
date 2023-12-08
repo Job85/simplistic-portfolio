@@ -11,7 +11,7 @@ export default function Contact() {
             <div className={styles.messanger}>
                 <div className={styles.text_bubble}>
                     <TypeWriter
-                        texts={text}
+                        texts={text || []}
                     />
                 </div>
                 <div className={styles.answering_machine}>
