@@ -8,7 +8,7 @@ export default function About() {
                     About Me
                 </h1>
                 <p className={styles.para1}>
-                    Hello, I'&aposm Julian Jernigan, and I'&aposve embarked on a tech-driven quest &#128640; to reshape the digital landscape through imaginative solutions as a full-stack software engineer.
+                    Hello, I'&apos;m Julian Jernigan, and I'&apos;ve embarked on a tech-driven quest &#128640; to reshape the digital landscape through imaginative solutions as a full-stack software engineer.
                     My conviction is that a well-crafted back-end forms the very backbone of every exceptional application, while user experience thrives with an appealing front-end.
                 </p>
                 <p className={styles.para2}>
@@ -22,7 +22,7 @@ export default function About() {
                 </h2>
                 <div className={styles.sub_skills}>
                     <h3 className={styles.h3}>
-                        STACK'&aposs
+                        STACK'&apos;s
                     </h3>
                     <div className={styles.stack}>
                         <MERN />
