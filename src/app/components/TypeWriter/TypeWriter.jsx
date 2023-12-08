@@ -24,7 +24,6 @@ const TypeWriter = ({ texts, onAnimationComplete, onCompleteDelay, delayAfterCom
                 if (currentText.length < texts[currentTextIndex].length) {
                     setCurrentText((prevText) => prevText + texts[currentTextIndex].charAt(currentText.length));
                 } else {
-                    clearInterval(intervalId);
                     if (currentTextIndex < texts.length - 1) {
                         setTimeout(() => {
                             setCurrentTextIndex((index) => index + 1);
