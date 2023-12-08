@@ -58,7 +58,7 @@ export default function Home() {
                 Through <span className={styles.bold}>Innovative</span> and <span className={styles.bold}>Efficient</span> Design
               </h1>
               <h2 className={styles.h2}>
-                Hi, I'&apos;m <span className={styles.bold}>Julian Jernigan</span>, a <span className={styles.bold}>full-stack</span> software engineer with a focus on <span className={styles.bold}>back-end</span> development
+                Hi, I&apos;m <span className={styles.bold}>Julian Jernigan</span>, a <span className={styles.bold}>full-stack</span> software engineer with a focus on <span className={styles.bold}>back-end</span> development
               </h2>
             </div>
             {pageTransition && (
