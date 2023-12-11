@@ -24,6 +24,7 @@ const TypeWriter = ({ texts, onAnimationComplete, onCompleteDelay, delayAfterCom
                 if (currentText.length < texts[currentTextIndex].length) {
                     setCurrentText((prevText) => prevText + texts[currentTextIndex].charAt(currentText.length));
                 } else {
+                    clearInterval(intervalId);
                     if (currentTextIndex < texts.length - 1) {
                         setTimeout(() => {
                             setCurrentTextIndex((index) => index + 1);
@@ -44,7 +45,7 @@ const TypeWriter = ({ texts, onAnimationComplete, onCompleteDelay, delayAfterCom
     }, [texts, currentText, currentTextIndex, delayAfterComplete, onAnimationComplete, onCompleteDelay, speed]);
 
     return (
-        <p className={`${styles.text} ${press_start_2P.className} ${currentTextIndex === 0 ? style : ''} ${fontClassNames && Array.isArray(fontClassNames) ? fontClassNames[currentTextIndex] : ''}`}>
+        <p className={`${styles.text} ${press_start_2P.className} ${currentTextIndex === 0 ? style : ''} ${fontClassNames[currentTextIndex]}`}>
             {currentText}
         </p>
     )
