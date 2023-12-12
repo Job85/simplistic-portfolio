@@ -1,6 +1,6 @@
 'use client'
 
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, use } from 'react';
 import { useRouter } from 'next/navigation';
 import styles from './page.module.css';
 import Button from './components/Button/Button';
@@ -25,7 +25,16 @@ export default function Home() {
 
   const handleClick = () => {
     router.push('/contact')
+    sessionStorage.setItem('visited', 'true');
   };
+
+  useEffect(() => {
+    const visited = sessionStorage.getItem('visited');
+    if (visited) {
+      setAnimationComplete(true);
+      setPageTransition(true);
+    }
+  }, []);
 
   useEffect(() => {
     if (animationComplete) {
