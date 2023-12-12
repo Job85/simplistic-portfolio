@@ -13,10 +13,20 @@ const press_start_2P = Press_Start_2P({
 })
 
 
-const TypeWriter = ({ texts, onAnimationComplete, onCompleteDelay, delayAfterComplete, style, fontClassNames }) => {
+const TypeWriter = ({
+    texts,
+    onAnimationComplete,
+    onCompleteDelay,
+    delayAfterComplete,
+    style,
+    fontClassNames,
+    customFont,
+}) => {
     const [currentText, setCurrentText] = useState('');
     const [currentTextIndex, setCurrentTextIndex] = useState(0);
     let speed = 50;
+
+    const font = customFont || press_start_2P;
 
     useEffect(() => {
         if (currentTextIndex < texts.length) {
@@ -45,7 +55,7 @@ const TypeWriter = ({ texts, onAnimationComplete, onCompleteDelay, delayAfterCom
     }, [texts, currentText, currentTextIndex, delayAfterComplete, onAnimationComplete, onCompleteDelay, speed]);
 
     return (
-        <p className={`${styles.text} ${press_start_2P.className} ${currentTextIndex === 0 ? style : ''} ${fontClassNames[currentTextIndex]}`}>
+        <p className={`${styles.text} ${font.className} ${currentTextIndex === 0 ? style : ''} ${fontClassNames}`}>
             {currentText}
         </p>
     )

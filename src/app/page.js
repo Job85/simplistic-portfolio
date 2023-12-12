@@ -15,7 +15,7 @@ export default function Home() {
   const [pageTransition, setPageTransition] = useState(false);
   const router = useRouter();
 
-  const textArray = ["Heeey yooouu guys!", "Get in touch!"]
+  const textArray = ["Get in touch!"]
   const text2 = ["Where we're going. We don't need roads <"]
 
   const handleAnimationComplete = () => {
@@ -68,9 +68,6 @@ export default function Home() {
               >
                 <TypeWriter
                   texts={textArray}
-                  fontClassNames={[gooniesFont.className]}
-                  style={styles.custom_text}
-                  applyCustomStyleToFirstString={true}
                   onCompleteDelay={10000}
                   delayAfterComplete={3000}
                 />
