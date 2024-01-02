@@ -25,12 +25,18 @@ export default function Home() {
 
   const handleClick = () => {
     router.push('/contact')
-    sessionStorage.setItem('visited', 'true');
   };
 
   useEffect(() => {
+    // Check if 'visited' is not set and seet it
     const visited = sessionStorage.getItem('visited');
-    if (visited) {
+    console.log('Visited:', visited);
+    if (!visited) {
+      sessionStorage.setItem('visited', 'true');
+    }
+
+    // If 'visited' is set to 'true', set animationComplete and pageTransition
+    if (visited === 'true') {
       setAnimationComplete(true);
       setPageTransition(true);
     }
@@ -38,6 +44,7 @@ export default function Home() {
 
   useEffect(() => {
     if (animationComplete) {
+      console.log('Animation complete. Setting page transition after 1500m.')
       setTimeout(() => {
         setPageTransition(true);
       }, 1500)
